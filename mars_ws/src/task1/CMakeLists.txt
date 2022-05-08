@@ -9,11 +9,13 @@ project(task1)
 ## is used, also find other catkin packages
 find_package(catkin REQUIRED COMPONENTS
   geometry_msgs
+  std_msgs
   rosbag
   rosbag
   roscpp
   roslib
   rospy
+  message_generation
 )
 
 ## System dependencies are found with CMake's conventions
@@ -56,6 +58,12 @@ find_package(catkin REQUIRED COMPONENTS
 #   Message2.msg
 # )
 
+## Generate messages in the 'msg' folder
+add_message_files(
+   FILES
+   IRStamped.msg
+)
+
 ## Generate services in the 'srv' folder
 # add_service_files(
 #   FILES
@@ -75,6 +83,13 @@ find_package(catkin REQUIRED COMPONENTS
 #   DEPENDENCIES
 #   geometry_msgs
 # )
+
+## Generate added messages and services with any dependencies listed here
+generate_messages(
+   DEPENDENCIES
+   geometry_msgs   
+   std_msgs
+ )
 
 ################################################
 ## Declare ROS dynamic reconfigure parameters ##
@@ -112,6 +127,17 @@ catkin_package(
 #  DEPENDS system_lib
 )
 
+catkin_package(
+
+  CATKIN_DEPENDS 
+  geometry_msgs
+  rosbag
+  rosbag
+  roscpp
+  roslib
+  rospy
+  message_runtime
+)
 ###########
 ## Build ##
 ###########

@@ -1,2 +1,15 @@
 # Hashes of file build rules.
+6587825923acde51da2d5364cd98109b /home/nitz/git_workspace/AUTO1_Task/mars_ws/devel/include/task1/IRStamped.h
+6976697a3715da232534af6eebe982b4 /home/nitz/git_workspace/AUTO1_Task/mars_ws/devel/lib/python3/dist-packages/task1/msg/_IRStamped.py
+8406adff7c82050362d98404fe912cac /home/nitz/git_workspace/AUTO1_Task/mars_ws/devel/lib/python3/dist-packages/task1/msg/__init__.py
+73f15739017c345238487b018a47af1c /home/nitz/git_workspace/AUTO1_Task/mars_ws/devel/share/common-lisp/ros/task1/msg/IRStamped.lisp
+e02f6b1f85d928ad97f7e2af014bcc3d /home/nitz/git_workspace/AUTO1_Task/mars_ws/devel/share/gennodejs/ros/task1/msg/IRStamped.js
+09f2715558c72b5e46c5335424b73bd4 /home/nitz/git_workspace/AUTO1_Task/mars_ws/devel/share/roseus/ros/task1/manifest.l
+2940afbab1ca1364931236770e6edbbf /home/nitz/git_workspace/AUTO1_Task/mars_ws/devel/share/roseus/ros/task1/msg/IRStamped.l
 697fc132019219d027b740df00f6013d CMakeFiles/clean_test_results
+2acd4d002ad5bd7acaf66f3e9f13711c task1/CMakeFiles/_task1_generate_messages_check_deps_IRStamped
+21c2c48e801aab2197c3e8ca5eb14aec task1/CMakeFiles/task1_generate_messages_cpp
+21c2c48e801aab2197c3e8ca5eb14aec task1/CMakeFiles/task1_generate_messages_eus
+21c2c48e801aab2197c3e8ca5eb14aec task1/CMakeFiles/task1_generate_messages_lisp
+21c2c48e801aab2197c3e8ca5eb14aec task1/CMakeFiles/task1_generate_messages_nodejs
+21c2c48e801aab2197c3e8ca5eb14aec task1/CMakeFiles/task1_generate_messages_py
