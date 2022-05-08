@@ -67,14 +67,14 @@ set(task1_CONFIG_INCLUDED TRUE)
 
 # set variables for source/devel/install prefixes
 if("FALSE" STREQUAL "TRUE")
-  set(task1_SOURCE_PREFIX /home/nitz/git_workspace/mars_ws/src/task1)
-  set(task1_DEVEL_PREFIX /home/nitz/git_workspace/mars_ws/devel)
+  set(task1_SOURCE_PREFIX /home/nitz/git_workspace/AUTO1_Task/mars_ws/src/task1)
+  set(task1_DEVEL_PREFIX /home/nitz/git_workspace/AUTO1_Task/mars_ws/devel)
   set(task1_INSTALL_PREFIX "")
   set(task1_PREFIX ${task1_DEVEL_PREFIX})
 else()
   set(task1_SOURCE_PREFIX "")
   set(task1_DEVEL_PREFIX "")
-  set(task1_INSTALL_PREFIX /home/nitz/git_workspace/mars_ws/install)
+  set(task1_INSTALL_PREFIX /home/nitz/git_workspace/AUTO1_Task/mars_ws/install)
   set(task1_PREFIX ${task1_INSTALL_PREFIX})
 endif()
 
@@ -154,7 +154,7 @@ foreach(library ${libraries})
     set(lib_path "")
     set(lib "${library}-NOTFOUND")
     # since the path where the library is found is returned we have to iterate over the paths manually
-    foreach(path /home/nitz/git_workspace/mars_ws/install/lib;/opt/ros/noetic/lib)
+    foreach(path /home/nitz/git_workspace/AUTO1_Task/mars_ws/install/lib;/opt/ros/noetic/lib)
       find_library(lib ${library}
         PATHS ${path}
         NO_DEFAULT_PATH NO_CMAKE_FIND_ROOT_PATH)

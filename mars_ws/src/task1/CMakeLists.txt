@@ -10,10 +10,10 @@ project(task1)
 find_package(catkin REQUIRED COMPONENTS
   geometry_msgs
   rosbag
+  rosbag
   roscpp
   roslib
   rospy
-  std_msgs
 )
 
 ## System dependencies are found with CMake's conventions
@@ -73,7 +73,7 @@ find_package(catkin REQUIRED COMPONENTS
 ## Generate added messages and services with any dependencies listed here
 # generate_messages(
 #   DEPENDENCIES
-#   geometry_msgs#   std_msgs
+#   geometry_msgs
 # )
 
 ################################################
@@ -108,7 +108,7 @@ find_package(catkin REQUIRED COMPONENTS
 catkin_package(
 #  INCLUDE_DIRS include
 #  LIBRARIES task1
-#  CATKIN_DEPENDS geometry_msgs rosbag roscpp roslib rospy std_msgs
+#  CATKIN_DEPENDS geometry_msgs rosbag rosbag roscpp roslib rospy
 #  DEPENDS system_lib
 )
 

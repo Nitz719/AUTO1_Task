@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/nitz/git_workspace/mars_ws/src
+CMAKE_SOURCE_DIR = /home/nitz/git_workspace/AUTO1_Task/mars_ws/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/nitz/git_workspace/mars_ws/build
+CMAKE_BINARY_DIR = /home/nitz/git_workspace/AUTO1_Task/mars_ws/build
 
 # Utility rule file for std_srvs_generate_messages_cpp.
 
@@ -63,10 +63,10 @@ task1/CMakeFiles/std_srvs_generate_messages_cpp.dir/build: std_srvs_generate_mes
 .PHONY : task1/CMakeFiles/std_srvs_generate_messages_cpp.dir/build
 
 task1/CMakeFiles/std_srvs_generate_messages_cpp.dir/clean:
-	cd /home/nitz/git_workspace/mars_ws/build/task1 && $(CMAKE_COMMAND) -P CMakeFiles/std_srvs_generate_messages_cpp.dir/cmake_clean.cmake
+	cd /home/nitz/git_workspace/AUTO1_Task/mars_ws/build/task1 && $(CMAKE_COMMAND) -P CMakeFiles/std_srvs_generate_messages_cpp.dir/cmake_clean.cmake
 .PHONY : task1/CMakeFiles/std_srvs_generate_messages_cpp.dir/clean
 
 task1/CMakeFiles/std_srvs_generate_messages_cpp.dir/depend:
-	cd /home/nitz/git_workspace/mars_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/nitz/git_workspace/mars_ws/src /home/nitz/git_workspace/mars_ws/src/task1 /home/nitz/git_workspace/mars_ws/build /home/nitz/git_workspace/mars_ws/build/task1 /home/nitz/git_workspace/mars_ws/build/task1/CMakeFiles/std_srvs_generate_messages_cpp.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/nitz/git_workspace/AUTO1_Task/mars_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/nitz/git_workspace/AUTO1_Task/mars_ws/src /home/nitz/git_workspace/AUTO1_Task/mars_ws/src/task1 /home/nitz/git_workspace/AUTO1_Task/mars_ws/build /home/nitz/git_workspace/AUTO1_Task/mars_ws/build/task1 /home/nitz/git_workspace/AUTO1_Task/mars_ws/build/task1/CMakeFiles/std_srvs_generate_messages_cpp.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : task1/CMakeFiles/std_srvs_generate_messages_cpp.dir/depend
 

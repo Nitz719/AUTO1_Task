@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/nitz/git_workspace/mars_ws/src
+CMAKE_SOURCE_DIR = /home/nitz/git_workspace/AUTO1_Task/mars_ws/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/nitz/git_workspace/mars_ws/build
+CMAKE_BINARY_DIR = /home/nitz/git_workspace/AUTO1_Task/mars_ws/build
 
 # Utility rule file for rosgraph_msgs_generate_messages_lisp.
 
@@ -63,10 +63,10 @@ task1/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build: rosgraph_msgs_g
 .PHONY : task1/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build
 
 task1/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/clean:
-	cd /home/nitz/git_workspace/mars_ws/build/task1 && $(CMAKE_COMMAND) -P CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/cmake_clean.cmake
+	cd /home/nitz/git_workspace/AUTO1_Task/mars_ws/build/task1 && $(CMAKE_COMMAND) -P CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/cmake_clean.cmake
 .PHONY : task1/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/clean
 
 task1/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/depend:
-	cd /home/nitz/git_workspace/mars_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/nitz/git_workspace/mars_ws/src /home/nitz/git_workspace/mars_ws/src/task1 /home/nitz/git_workspace/mars_ws/build /home/nitz/git_workspace/mars_ws/build/task1 /home/nitz/git_workspace/mars_ws/build/task1/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/nitz/git_workspace/AUTO1_Task/mars_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/nitz/git_workspace/AUTO1_Task/mars_ws/src /home/nitz/git_workspace/AUTO1_Task/mars_ws/src/task1 /home/nitz/git_workspace/AUTO1_Task/mars_ws/build /home/nitz/git_workspace/AUTO1_Task/mars_ws/build/task1 /home/nitz/git_workspace/AUTO1_Task/mars_ws/build/task1/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : task1/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/depend
 

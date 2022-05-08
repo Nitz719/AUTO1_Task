@@ -1,4 +1,4 @@
-prefix=/home/nitz/git_workspace/mars_ws/devel
+prefix=/home/nitz/git_workspace/AUTO1_Task/mars_ws/devel
 
 Name: task1
 Description: Description of task1

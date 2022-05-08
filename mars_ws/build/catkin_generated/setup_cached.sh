@@ -7,7 +7,8 @@
 # new environment variables
 
 # modified environment variables
-export CMAKE_PREFIX_PATH="/home/nitz/git_workspace/mars_ws/devel:$CMAKE_PREFIX_PATH"
-export PWD='/home/nitz/git_workspace/mars_ws/build'
-export ROSLISP_PACKAGE_DIRECTORIES='/home/nitz/git_workspace/mars_ws/devel/share/common-lisp'
-export ROS_PACKAGE_PATH="/home/nitz/git_workspace/mars_ws/src:$ROS_PACKAGE_PATH"
+export CMAKE_PREFIX_PATH="/home/nitz/git_workspace/AUTO1_Task/mars_ws/devel:$CMAKE_PREFIX_PATH"
+export LD_LIBRARY_PATH="/home/nitz/git_workspace/AUTO1_Task/mars_ws/devel/lib:$LD_LIBRARY_PATH"
+export PWD='/home/nitz/git_workspace/AUTO1_Task/mars_ws/build'
+export ROSLISP_PACKAGE_DIRECTORIES='/home/nitz/git_workspace/AUTO1_Task/mars_ws/devel/share/common-lisp'
+export ROS_PACKAGE_PATH="/home/nitz/git_workspace/AUTO1_Task/mars_ws/src:$ROS_PACKAGE_PATH"

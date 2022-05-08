@@ -1,2 +1,2 @@
 task1
--DCATKIN_DEVEL_PREFIX=/home/nitz/git_workspace/mars_ws/devel -DCMAKE_INSTALL_PREFIX=/home/nitz/git_workspace/mars_ws/install -G Unix Makefiles
+-DCATKIN_DEVEL_PREFIX=/home/nitz/git_workspace/AUTO1_Task/mars_ws/devel -DCMAKE_INSTALL_PREFIX=/home/nitz/git_workspace/AUTO1_Task/mars_ws/install -G Unix Makefiles
