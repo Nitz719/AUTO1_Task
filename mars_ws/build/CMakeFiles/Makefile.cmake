@@ -262,6 +262,8 @@ set(CMAKE_DEPEND_INFO_FILES
   "task1/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/DependInfo.cmake"
   "task1/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/DependInfo.cmake"
   "task1/CMakeFiles/topic_tools_generate_messages_cpp.dir/DependInfo.cmake"
+  "task1/CMakeFiles/main_node.dir/DependInfo.cmake"
+  "task1/CMakeFiles/NodeIRpositions.dir/DependInfo.cmake"
   "task1/CMakeFiles/std_msgs_generate_messages_eus.dir/DependInfo.cmake"
   "task1/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/DependInfo.cmake"
   "task1/CMakeFiles/roscpp_generate_messages_nodejs.dir/DependInfo.cmake"

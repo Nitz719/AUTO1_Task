@@ -149,10 +149,20 @@ include_directories(
   ${catkin_INCLUDE_DIRS}
 )
 
+include_directories(
+include
+  ${catkin_INCLUDE_DIRS}
+)
+
 ## Declare a C++ library
 # add_library(${PROJECT_NAME}
 #   src/${PROJECT_NAME}/task1.cpp
 # )
+
+add_library(NodeIRpositions
+   include/task1/ir_pub_sub.h
+   src/ir_pub_sub.cpp
+ )
 
 ## Add cmake target dependencies of the library
 ## as an example, code may need to be generated before libraries
@@ -163,6 +173,7 @@ include_directories(
 ## With catkin_make all packages are built within a single CMake context
 ## The recommended prefix ensures that target names across packages don't collide
 # add_executable(${PROJECT_NAME}_node src/task1_node.cpp)
+add_executable(main_node src/main.cpp)
 
 ## Rename C++ executable without prefix
 ## The above recommended prefix causes long target names, the following renames the
@@ -174,11 +185,23 @@ include_directories(
 ## same as for the library above
 # add_dependencies(${PROJECT_NAME}_node ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
 
+add_dependencies(main_node ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
+
+add_dependencies(NodeIRpositions ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
+
 ## Specify libraries to link a library or executable target against
 # target_link_libraries(${PROJECT_NAME}_node
 #   ${catkin_LIBRARIES}
 # )
 
+ target_link_libraries(main_node
+                       NodeIRpositions
+   ${catkin_LIBRARIES}
+ )
+
+ target_link_libraries(NodeIRpositions
+   ${catkin_LIBRARIES}
+ )
 #############
 ## Install ##
 #############

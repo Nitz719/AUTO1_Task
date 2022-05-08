@@ -348,6 +348,36 @@ topic_tools_generate_messages_cpp/fast:
 .PHONY : topic_tools_generate_messages_cpp/fast
 
 # Convenience name for target.
+task1/CMakeFiles/main_node.dir/rule:
+	cd /home/nitz/git_workspace/AUTO1_Task/mars_ws/build && $(MAKE) -f CMakeFiles/Makefile2 task1/CMakeFiles/main_node.dir/rule
+.PHONY : task1/CMakeFiles/main_node.dir/rule
+
+# Convenience name for target.
+main_node: task1/CMakeFiles/main_node.dir/rule
+
+.PHONY : main_node
+
+# fast build rule for target.
+main_node/fast:
+	cd /home/nitz/git_workspace/AUTO1_Task/mars_ws/build && $(MAKE) -f task1/CMakeFiles/main_node.dir/build.make task1/CMakeFiles/main_node.dir/build
+.PHONY : main_node/fast
+
+# Convenience name for target.
+task1/CMakeFiles/NodeIRpositions.dir/rule:
+	cd /home/nitz/git_workspace/AUTO1_Task/mars_ws/build && $(MAKE) -f CMakeFiles/Makefile2 task1/CMakeFiles/NodeIRpositions.dir/rule
+.PHONY : task1/CMakeFiles/NodeIRpositions.dir/rule
+
+# Convenience name for target.
+NodeIRpositions: task1/CMakeFiles/NodeIRpositions.dir/rule
+
+.PHONY : NodeIRpositions
+
+# fast build rule for target.
+NodeIRpositions/fast:
+	cd /home/nitz/git_workspace/AUTO1_Task/mars_ws/build && $(MAKE) -f task1/CMakeFiles/NodeIRpositions.dir/build.make task1/CMakeFiles/NodeIRpositions.dir/build
+.PHONY : NodeIRpositions/fast
+
+# Convenience name for target.
 task1/CMakeFiles/std_msgs_generate_messages_eus.dir/rule:
 	cd /home/nitz/git_workspace/AUTO1_Task/mars_ws/build && $(MAKE) -f CMakeFiles/Makefile2 task1/CMakeFiles/std_msgs_generate_messages_eus.dir/rule
 .PHONY : task1/CMakeFiles/std_msgs_generate_messages_eus.dir/rule
@@ -797,6 +827,60 @@ topic_tools_generate_messages_nodejs/fast:
 	cd /home/nitz/git_workspace/AUTO1_Task/mars_ws/build && $(MAKE) -f task1/CMakeFiles/topic_tools_generate_messages_nodejs.dir/build.make task1/CMakeFiles/topic_tools_generate_messages_nodejs.dir/build
 .PHONY : topic_tools_generate_messages_nodejs/fast
 
+src/ir_pub_sub.o: src/ir_pub_sub.cpp.o
+
+.PHONY : src/ir_pub_sub.o
+
+# target to build an object file
+src/ir_pub_sub.cpp.o:
+	cd /home/nitz/git_workspace/AUTO1_Task/mars_ws/build && $(MAKE) -f task1/CMakeFiles/NodeIRpositions.dir/build.make task1/CMakeFiles/NodeIRpositions.dir/src/ir_pub_sub.cpp.o
+.PHONY : src/ir_pub_sub.cpp.o
+
+src/ir_pub_sub.i: src/ir_pub_sub.cpp.i
+
+.PHONY : src/ir_pub_sub.i
+
+# target to preprocess a source file
+src/ir_pub_sub.cpp.i:
+	cd /home/nitz/git_workspace/AUTO1_Task/mars_ws/build && $(MAKE) -f task1/CMakeFiles/NodeIRpositions.dir/build.make task1/CMakeFiles/NodeIRpositions.dir/src/ir_pub_sub.cpp.i
+.PHONY : src/ir_pub_sub.cpp.i
+
+src/ir_pub_sub.s: src/ir_pub_sub.cpp.s
+
+.PHONY : src/ir_pub_sub.s
+
+# target to generate assembly for a file
+src/ir_pub_sub.cpp.s:
+	cd /home/nitz/git_workspace/AUTO1_Task/mars_ws/build && $(MAKE) -f task1/CMakeFiles/NodeIRpositions.dir/build.make task1/CMakeFiles/NodeIRpositions.dir/src/ir_pub_sub.cpp.s
+.PHONY : src/ir_pub_sub.cpp.s
+
+src/main.o: src/main.cpp.o
+
+.PHONY : src/main.o
+
+# target to build an object file
+src/main.cpp.o:
+	cd /home/nitz/git_workspace/AUTO1_Task/mars_ws/build && $(MAKE) -f task1/CMakeFiles/main_node.dir/build.make task1/CMakeFiles/main_node.dir/src/main.cpp.o
+.PHONY : src/main.cpp.o
+
+src/main.i: src/main.cpp.i
+
+.PHONY : src/main.i
+
+# target to preprocess a source file
+src/main.cpp.i:
+	cd /home/nitz/git_workspace/AUTO1_Task/mars_ws/build && $(MAKE) -f task1/CMakeFiles/main_node.dir/build.make task1/CMakeFiles/main_node.dir/src/main.cpp.i
+.PHONY : src/main.cpp.i
+
+src/main.s: src/main.cpp.s
+
+.PHONY : src/main.s
+
+# target to generate assembly for a file
+src/main.cpp.s:
+	cd /home/nitz/git_workspace/AUTO1_Task/mars_ws/build && $(MAKE) -f task1/CMakeFiles/main_node.dir/build.make task1/CMakeFiles/main_node.dir/src/main.cpp.s
+.PHONY : src/main.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -818,6 +902,8 @@ help:
 	@echo "... geometry_msgs_generate_messages_cpp"
 	@echo "... rosgraph_msgs_generate_messages_py"
 	@echo "... topic_tools_generate_messages_cpp"
+	@echo "... main_node"
+	@echo "... NodeIRpositions"
 	@echo "... std_msgs_generate_messages_eus"
 	@echo "... geometry_msgs_generate_messages_lisp"
 	@echo "... roscpp_generate_messages_nodejs"
@@ -852,6 +938,12 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... roscpp_generate_messages_eus"
 	@echo "... topic_tools_generate_messages_nodejs"
+	@echo "... src/ir_pub_sub.o"
+	@echo "... src/ir_pub_sub.i"
+	@echo "... src/ir_pub_sub.s"
+	@echo "... src/main.o"
+	@echo "... src/main.i"
+	@echo "... src/main.s"
 .PHONY : help
 
 

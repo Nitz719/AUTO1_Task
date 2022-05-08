@@ -1,0 +1,14 @@
+<launch>
+  
+   <!-- Run the rosbag FILE -->
+   
+  <arg name="bag_file_name" value="challenge"/>
+
+  <node pkg="rosbag" type="play" name="rosbag_play" output="screen" args="--clock $(find task1)/bag/$(arg bag_file_name).bag"/>
+  
+  <!-- Run the CPP executable that Subscribes the rosbag topics , converts   to custom msg and Publishes the topic-->
+  
+  <node pkg = "task1" type = "main_node" name = "ir_positions" output = "screen" /> 
+  
+</launch>
+

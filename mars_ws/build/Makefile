@@ -441,6 +441,32 @@ topic_tools_generate_messages_cpp/fast:
 .PHONY : topic_tools_generate_messages_cpp/fast
 
 #=============================================================================
+# Target rules for targets named main_node
+
+# Build rule for target.
+main_node: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 main_node
+.PHONY : main_node
+
+# fast build rule for target.
+main_node/fast:
+	$(MAKE) -f task1/CMakeFiles/main_node.dir/build.make task1/CMakeFiles/main_node.dir/build
+.PHONY : main_node/fast
+
+#=============================================================================
+# Target rules for targets named NodeIRpositions
+
+# Build rule for target.
+NodeIRpositions: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 NodeIRpositions
+.PHONY : NodeIRpositions
+
+# fast build rule for target.
+NodeIRpositions/fast:
+	$(MAKE) -f task1/CMakeFiles/NodeIRpositions.dir/build.make task1/CMakeFiles/NodeIRpositions.dir/build
+.PHONY : NodeIRpositions/fast
+
+#=============================================================================
 # Target rules for targets named std_msgs_generate_messages_eus
 
 # Build rule for target.
@@ -864,6 +890,8 @@ help:
 	@echo "... geometry_msgs_generate_messages_cpp"
 	@echo "... rosgraph_msgs_generate_messages_py"
 	@echo "... topic_tools_generate_messages_cpp"
+	@echo "... main_node"
+	@echo "... NodeIRpositions"
 	@echo "... std_msgs_generate_messages_eus"
 	@echo "... geometry_msgs_generate_messages_lisp"
 	@echo "... roscpp_generate_messages_nodejs"
