@@ -1,6 +1,26 @@
+
+ /*
+*
+* Standard Headers
+* 
+ */
 #include <iostream>
 #include <ros/ros.h>
+
+ /*
+*
+* Included availiable message type PoseWithCovarianceStamped (Publisher)
+* 
+ */
+ 
 #include <geometry_msgs/PoseWithCovarianceStamped.h>
+
+ /*
+*
+* Included Custom added message type  (Subscriber)
+* 
+ */
+ 
 #include "task1/IRStamped.h"
 
  /*
@@ -21,7 +41,8 @@ extern ros::Publisher pub;
 class IRpositions{
         
       private :
-        	
+        double	standard_deviation;
+        
       public :
        
        /*

@@ -25,6 +25,7 @@ geometry_msgs::PoseWithCovarianceStamped conv_msg;
 IRpositions::IRpositions()
   {
   	std::cout << "Inside the Constructor " << std::endl;
+  	standard_deviation = 0.0005;
   }
  
 /*
@@ -85,8 +86,29 @@ void IRpositions:: irTriggersCallback(const task1::IRStamped& msg)
   
 geometry_msgs::PoseWithCovarianceStamped& IRpositions::convert_msg(task1::IRStamped msg) 
   {
-    conv_msg.header = msg.header;
     
+     /*
+    *
+    * Copy the header from the custom message to the required msg type
+    * 
+     */
+    conv_msg.header = msg.header;
+ 
+      /*
+    *
+    * Adding the covaraince value with the value given 5cm to the required
+    * msg
+    * 
+     */
+ 
+    conv_msg.pose.covariance[0] = standard_deviation;
+    
+    for (int i =1;i<36;i++)
+    {
+      conv_msg.pose.covariance[i] = 0;
+    }  
+    
+     
      /*
     * 
     * Conditional statement to convert the beam_index to distance covereed 

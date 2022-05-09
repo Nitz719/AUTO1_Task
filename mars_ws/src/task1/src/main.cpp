@@ -115,7 +115,6 @@ int main(int argc, char **argv)
      
     pub = n.advertise<geometry_msgs::PoseWithCovarianceStamped>("/ir_positions", 10);
  
-    
      /*
     * 
     * ros::spin() will enter a loop, pumping callbacks.  With this

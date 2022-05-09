@@ -8,7 +8,18 @@
   
   <!-- Run the CPP executable that Subscribes the rosbag topics , converts   to custom msg and Publishes the topic-->
   
-  <node pkg = "task1" type = "main_node" name = "ir_positions" output = "screen" /> 
+  <node pkg = "task1" type = "main_node" name = "main" output = "screen" /> 
+  
+   <!-- Run the EKF Localization node for Sensor Fusion -->
+ 
+  <!-- Run the EKF Localization node -->
+ 
+  <node pkg="robot_localization" type="ekf_localization_node" name="ekf_localization">
+ 
+  <rosparam command="load" file="$(find task1)/config/ekf_localization.yaml"/>
+    
+  </node>
+    
   
 </launch>
 
