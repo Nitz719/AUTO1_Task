@@ -5,21 +5,24 @@
   <arg name="bag_file_name" value="challenge"/>
 
   <node pkg="rosbag" type="play" name="rosbag_play" output="screen" args="--clock $(find task1)/bag/$(arg bag_file_name).bag"/>
+ 
   
-  <!-- Run the CPP executable that Subscribes the rosbag topics , converts   to custom msg and Publishes the topic-->
+  <!-- Run the CPP executable that Subscribes the rosbag topic , converts   to custom msg and Publishes the topic-->
   
   <node pkg = "task1" type = "main_node" name = "main" output = "screen" /> 
-  
-   <!-- Run the EKF Localization node for Sensor Fusion -->
  
-  <!-- Run the EKF Localization node -->
+  
+  <!-- Run the EKF Localization node for Sensor Fusion -->
  
   <node pkg="robot_localization" type="ekf_localization_node" name="ekf_localization">
  
   <rosparam command="load" file="$(find task1)/config/ekf_localization.yaml"/>
     
   </node>
-    
   
+  <!-- Run the python file that Subscribes the ekf topic , converts to custom msg and Publishes the topic-->
+  
+  <node pkg = "task1" type = "car_pos_pub_sub.py" name = "sensor_fusion" output = "screen" />
+     
 </launch>
 

@@ -107,3 +107,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/task1" TYPE FILE FILES "/home/nitz/git_workspace/AUTO1_Task/mars_ws/src/task1/package.xml")
 endif()
 
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/task1" TYPE PROGRAM FILES "/home/nitz/git_workspace/AUTO1_Task/mars_ws/build/task1/catkin_generated/installspace/car_pos_pub_sub.py")
+endif()
+

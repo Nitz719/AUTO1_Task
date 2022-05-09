@@ -24,7 +24,12 @@ geometry_msgs::PoseWithCovarianceStamped conv_msg;
 
 IRpositions::IRpositions()
   {
-  	std::cout << "Inside the Constructor " << std::endl;
+  
+#if test_print 
+ 	
+  	ROS_INFO("Inside the Constructor");
+  	
+#endif 	
   	standard_deviation = 0.0005;
   }
  
@@ -36,7 +41,13 @@ IRpositions::IRpositions()
 
 IRpositions::~IRpositions()
   {
-  	std::cout << "Inside the Destructor " << std::endl;
+
+#if test_print 
+ 	
+  	ROS_INFO("Inside the Destructor");
+  	
+#endif 
+
   }
   
  /*
