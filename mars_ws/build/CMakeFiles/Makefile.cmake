@@ -23,6 +23,8 @@ set(CMAKE_MAKEFILE_DEPENDS
   "/home/nitz/git_workspace/AUTO1_Task/mars_ws/src/task1/CMakeLists.txt"
   "/home/nitz/git_workspace/AUTO1_Task/mars_ws/src/task1/package.xml"
   "/home/nitz/git_workspace/AUTO1_Task/mars_ws/src/task1/src/car_pos_pub_sub.py"
+  "/home/nitz/git_workspace/AUTO1_Task/mars_ws/src/task1/src/ekf_filter.py"
+  "/home/nitz/git_workspace/AUTO1_Task/mars_ws/src/task1/src/sensor_fusion.py"
   "/opt/ros/noetic/share/catkin/cmake/all.cmake"
   "/opt/ros/noetic/share/catkin/cmake/assert.cmake"
   "/opt/ros/noetic/share/catkin/cmake/atomic_configure_file.cmake"

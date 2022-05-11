@@ -21,3 +21,14 @@ Run the code
 	$ source devel/setup.bash
 * Run the code by the following command
 	$ roslaunch task1 task1.launch
+* Added EKF Localization python code for Sensor Fusion.Run the code by the
+  following command
+	$ roslaunch task1 task1_ekf.launch
+  ISSUE:
+  	Not able to capture the first values from the bag for sensor fusion so that the calculation are going wrong due to junk data.
+  CAUSE:
+  	One of the cause may be the timestamps of the topics are not synchronously captured.
+  	Frequency at which captured to be wrong. 
+  STATUS:
+  	Not Resolved
+	

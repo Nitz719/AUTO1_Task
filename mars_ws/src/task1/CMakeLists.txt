@@ -216,7 +216,7 @@ add_dependencies(NodeIRpositions ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EX
 #   DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
 # )
 
-catkin_install_python(PROGRAMS src/car_pos_pub_sub.py 
+catkin_install_python(PROGRAMS src/car_pos_pub_sub.py src/EKF_filter.py 
    DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
 )
 
